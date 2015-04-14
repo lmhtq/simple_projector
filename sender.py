@@ -5,7 +5,7 @@ from PIL import Image
 import ImageDraw
 import ImageFilter
 from PIL import ImageGrab
-from VideoCapture import Device
+#from VideoCapture import Device
 #cam = Device()
 #cam.setResolution(320,240)
 clisocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -28,7 +28,7 @@ while 1:
     bkgd.paste(im, box )
     #bkgd.show()
     da = bkgd.tostring()
-    print len(da)
+    #print len(da)
     clisocket.send(da)
-    print "Hello"
+    #print "Hello"
 #s.close()
